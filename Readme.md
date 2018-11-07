@@ -119,5 +119,23 @@ webpack练习
                 })
             ]
 17. 基本配置已完成，可将dist文件夹下的内容删除后，运行npm run dev进行编译。详细配置参照package.json及webpack.config.js文件。
+18. 通过配置webpack-dev-server开启web服务器,通过npm安装webpack-dev-server:
+
+    npm install webpack-dev-server -D
+安装完成后，在webpack.config.js中配置[devServer](https://webpack.js.org/configuration/dev-server/#src/components/Sidebar/Sidebar.jsx):
+
+        devServer:{
+        contentBase:path.resolve(__dirname,'dist'),
+        publicPath:'/',
+        port:8080,
+        historyApiFallback:true
+        }
+最后，在package.json的scripts脚本中写入:
+
+   "start": "webpack-dev-server --config webpack.config.js"
+现在，就可以通过npm run start命令启动项目啦～～～
+   
+
+
 
        
