@@ -1,5 +1,7 @@
-# webpack-react-project
-webpack练习
+# webpack-react-project 使用webpack搭建react项目
+webpack搭建react项目 [github源码](https://github.com/sunrun93/react-webpack-project)
+具体配置信息参照[package.json](https://github.com/sunrun93/react-webpack-project/blob/master/package.json)和[webpack.config.js](https://github.com/sunrun93/react-webpack-project/blob/master/webpack.config.js)
+
 1. 首先创建一个项目文件夹,并进入到该文件夹：
 
     mkdir react-webpack-project
