@@ -28,6 +28,12 @@ module.exports = {
       }
     ]
   },
+  devServer:{
+    contentBase:path.resolve(__dirname,'dist'),
+    publicPath:'/',
+    port:8080,
+    historyApiFallback:true
+  },
   plugins:[
       new ExtractTextPlugin("styles.css"),
       new HtmlWebpackPlugin({
