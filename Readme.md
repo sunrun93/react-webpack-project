@@ -92,18 +92,18 @@ webpack练习
         plugins:[
         new ExtractTextPlugin("styles.css")
         ]
-    15. 在src下新建index.html文件：
+15. 在src下新建index.html文件：
 
-            <html>
-                <head>
-                <link rel="stylesheet" href="style.css">
-                </head>
-                <body>
-                <div>Hello, world!</div>
-                <script src="main.js"></script>
-                </body>
-            </html>
-    16. 安装html-webpack-plugin插件，并进行相应的配置：
+        <html>
+            <head>
+            <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+            <div>Hello, world!</div>
+            <script src="main.js"></script>
+            </body>
+        </html>
+16. 安装html-webpack-plugin插件，并进行相应的配置：
 
         npm install extract-text-webpack-plugin -D
         webpack.config.js中的配置信息如下：
@@ -118,6 +118,6 @@ webpack练习
                     filename: 'index.html'
                 })
             ]
-    17. 基本配置已完成，可将dist文件夹下的内容删除后，运行npm run dev进行编译。
+17. 基本配置已完成，可将dist文件夹下的内容删除后，运行npm run dev进行编译。详细配置参照package.json及webpack.config.js文件。
 
        
